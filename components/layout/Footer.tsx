@@ -154,6 +154,30 @@ export function Footer() {
           </div>
         </div>
 
+        <div className="mt-10 mb-12 rounded-xl border border-white/10 bg-white/5 px-6 py-5">
+          <h3 className="text-sm font-semibold text-white">
+            Kids Shield Disclaimer
+          </h3>
+          <div className="mt-3 space-y-3 text-sm text-gray-300 leading-relaxed">
+            <p>
+              Kids Shield service software is designed for monitoring your
+              children on a smartphone you own or have proper consent to
+              monitor. You must notify users of the mobile phone that they are
+              being monitored by Kids Shield service. Failure to do so may
+              result in the breaking of federal and state laws. If you install
+              Kids Shield service software onto a phone device that you do not
+              own or have proper consent to monitor, we will fully cooperate
+              with law officials to the fullest extent possible.
+            </p>
+            <p>
+              All trademarks on this site are property of their respective
+              owners. Mentioned trademarks are used solely for the purpose of
+              describing smartphone and carrier compatibility for our mobile
+              phone monitoring software.
+            </p>
+          </div>
+        </div>
+
         {/* Divider */}
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
