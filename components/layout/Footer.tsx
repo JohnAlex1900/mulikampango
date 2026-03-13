@@ -61,7 +61,7 @@ export function Footer() {
                 Features
               </a>
               <a
-                href="https://net.mulikampango.com"
+                href="https://net.mulikampango.co.ke"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-gray-300 hover:text-white transition"
@@ -69,7 +69,7 @@ export function Footer() {
                 Download App
               </a>
               <a
-                href="https://mimi.mulikampango.com"
+                href="https://mimi.mulikampango.co.ke"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-gray-300 hover:text-white transition"
@@ -149,7 +149,7 @@ export function Footer() {
               className="flex items-center gap-2 text-sm text-gray-300 hover:text-white transition mt-2"
             >
               <Mail className="w-4 h-4 flex-shrink-0" />
-              info@mulikampango.com
+              info@mulikampango.co.ke
             </a>
           </div>
         </div>
