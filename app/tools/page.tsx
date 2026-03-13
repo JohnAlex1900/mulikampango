@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { FloatingCallButton } from '@/components/layout/FloatingCallButton'
@@ -99,10 +100,8 @@ export default function ToolsPage() {
               </a>
 
               {/* Mobile App */}
-              <a
-                href="https://net.mulikampango.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/download"
                 className="group p-8 rounded-2xl bg-gradient-to-br from-white to-blue-50 border-2 border-border hover:border-secondary/50 hover:shadow-lg transition-all"
               >
                 <div className="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
@@ -135,7 +134,7 @@ export default function ToolsPage() {
                 <div className="inline-block px-6 py-3 bg-secondary text-white rounded-lg font-semibold group-hover:bg-secondary/90 transition-colors">
                   Download Now →
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -276,14 +275,12 @@ export default function ToolsPage() {
               Access your dashboard or download the app now. Your family's safety is just minutes away.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://net.mulikampango.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/download"
                 className="px-8 py-3 bg-white text-primary rounded-lg hover:bg-gray-100 font-bold transition-colors"
               >
                 Download App
-              </a>
+              </Link>
               <a
                 href="https://mimi.mulikampango.com"
                 target="_blank"

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Phone, Download } from "lucide-react";
 
 export function CTABanner() {
@@ -15,15 +16,13 @@ export function CTABanner() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="https://net.mulikampango.co.ke"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/download"
             className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary rounded-lg hover:bg-gray-100 font-bold text-lg transition-colors shadow-lg"
           >
             <Download className="w-5 h-5" />
             Download App
-          </a>
+          </Link>
           <a
             href="tel:+254704000004"
             className="flex items-center justify-center gap-2 px-8 py-4 bg-accent text-white rounded-lg hover:bg-accent/90 font-bold text-lg transition-colors shadow-lg"

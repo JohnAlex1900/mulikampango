@@ -1,6 +1,7 @@
 "use client";
 
 import { Phone, Download } from "lucide-react";
+import Link from "next/link";
 import { ImageSlider } from "@/components/ui/ImageSlider";
 
 export function Hero() {
@@ -51,15 +52,13 @@ export function Hero() {
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>
-              <a
-                href="https://net.mulikampango.co.ke"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/download"
                 className="flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 font-semibold transition-colors shadow-md hover:shadow-lg transform hover:scale-105"
               >
                 <Download className="w-5 h-5" />
                 Download App
-              </a>
+              </Link>
             </div>
 
             {/* Trust Badges */}

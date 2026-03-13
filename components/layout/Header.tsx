@@ -62,15 +62,13 @@ export function Header() {
             </a>
 
             {/* Download Button */}
-            <a
-              href="https://net.mulikampango.co.ke"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/download"
               className="hidden sm:flex items-center gap-2 px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition font-medium text-sm"
             >
               <Download className="w-4 h-4" />
               Download
-            </a>
+            </Link>
 
             {/* Mobile Menu Button */}
             <button
@@ -120,15 +118,13 @@ export function Header() {
               <Phone className="w-4 h-4" />
               Call Us
             </a>
-            <a
-              href="https://net.mulikampango.co.ke"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/download"
               className="flex items-center gap-2 px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition font-medium text-sm"
             >
               <Download className="w-4 h-4" />
               Download App
-            </a>
+            </Link>
           </nav>
         )}
       </div>
