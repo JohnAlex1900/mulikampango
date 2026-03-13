@@ -121,7 +121,7 @@ export default function DownloadPage() {
                     Business Number
                   </p>
                   <p className="text-3xl font-extrabold text-[#003580] tracking-widest">
-                    400200
+                    802200
                   </p>
                   <p className="text-xs text-muted-foreground mt-1">
                     M-Pesa Paybill
@@ -134,7 +134,7 @@ export default function DownloadPage() {
                     Account Number
                   </p>
                   <p className="text-3xl font-extrabold text-secondary tracking-widest">
-                    MULI01
+                    164781
                   </p>
                   <p className="text-xs text-muted-foreground mt-1">
                     Your Account No.
