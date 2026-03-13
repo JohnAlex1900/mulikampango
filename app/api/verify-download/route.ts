@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
 
   if (!correctPassword) {
     return NextResponse.json(
-      { error: "Server configuration error. Please contact support." },
+      { error: "Server configuration failed. Please contact support." },
       { status: 500 }
     );
   }
