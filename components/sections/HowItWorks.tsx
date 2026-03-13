@@ -16,7 +16,7 @@ const steps = [
     title: "Download & Install",
     description: "Get the Mulikampango app from your app store in seconds.",
     cta: "Download App",
-    ctaLink: "https://net.mulikampango.com",
+    ctaLink: "https://net.mulikampango.co.ke",
   },
   {
     number: 2,
@@ -33,7 +33,7 @@ const steps = [
     description:
       "Customize alerts, set screen time limits, and geofencing boundaries.",
     cta: "Access Dashboard",
-    ctaLink: "https://mimi.mulikampango.com",
+    ctaLink: "https://mimi.mulikampango.co.ke",
   },
   {
     number: 4,
@@ -126,7 +126,7 @@ export function HowItWorks() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://net.mulikampango.com"
+              href="https://net.mulikampango.co.ke"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 font-semibold transition-colors shadow-md hover:shadow-lg"
