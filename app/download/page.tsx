@@ -159,8 +159,8 @@ export default function DownloadPage() {
                 {[
                   "Open M-Pesa on your phone.",
                   "Select Lipa na M-Pesa → Pay Bill.",
-                  "Enter Business No. 400200.",
-                  "Enter Account No. MULI01.",
+                  "Enter Business No. 802200",
+                  "Enter Account No. 164781",
                   "Enter amount and your M-Pesa PIN.",
                   "You will receive an SMS confirming payment.",
                   "Contact us on +254 704 000 004 to receive your download password.",
