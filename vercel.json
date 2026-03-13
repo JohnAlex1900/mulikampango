@@ -1,0 +1,20 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        { "type": "host", "value": "net.mulikampango.co.ke" }
+      ],
+      "destination": "https://kidsshield.net/kds/sms.jsp",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        { "type": "host", "value": "mimi.mulikampango.co.ke" }
+      ],
+      "destination": "https://kidsshield.net/kds/app.jsp?rcd=108",
+      "permanent": true
+    }
+  ]
+}
