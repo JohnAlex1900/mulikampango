@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
-
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -60,14 +59,12 @@ export function Footer() {
               >
                 Features
               </a>
-              <a
-                href="https://net.mulikampango.co.ke"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/download"
                 className="text-sm text-gray-300 hover:text-white transition"
               >
                 Download App
-              </a>
+              </Link>
               <a
                 href="https://mimi.mulikampango.co.ke"
                 target="_blank"

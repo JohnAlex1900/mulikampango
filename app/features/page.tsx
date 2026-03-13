@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingCallButton } from "@/components/layout/FloatingCallButton";
@@ -212,14 +213,12 @@ export default function FeaturesPage() {
             <p className="text-white/90 text-lg mb-8">
               Start your free 14-day trial today. No credit card required.
             </p>
-            <a
-              href="https://net.mulikampango.com"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/download"
               className="inline-block px-8 py-3 bg-white text-primary rounded-lg hover:bg-gray-100 font-bold transition-colors"
             >
               Download App Now
-            </a>
+            </Link>
           </div>
         </section>
       </main>

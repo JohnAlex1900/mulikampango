@@ -16,7 +16,7 @@ const steps = [
     title: "Download & Install",
     description: "Get the Mulikampango app from your app store in seconds.",
     cta: "Download App",
-    ctaLink: "https://net.mulikampango.co.ke",
+    ctaLink: "/download",
   },
   {
     number: 2,
@@ -95,15 +95,24 @@ export function HowItWorks() {
                     </p>
 
                     {/* CTA if applicable */}
-                    {step.cta && (
-                      <a
-                        href={step.ctaLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm font-semibold text-primary hover:text-primary/80 transition inline-flex items-center gap-1"
-                      >
-                        {step.cta} →
-                      </a>
+                    {step.cta && step.ctaLink && (
+                      step.ctaLink.startsWith("/") ? (
+                        <Link
+                          href={step.ctaLink}
+                          className="text-sm font-semibold text-primary hover:text-primary/80 transition inline-flex items-center gap-1"
+                        >
+                          {step.cta} →
+                        </Link>
+                      ) : (
+                        <a
+                          href={step.ctaLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-semibold text-primary hover:text-primary/80 transition inline-flex items-center gap-1"
+                        >
+                          {step.cta} →
+                        </a>
+                      )
                     )}
                   </div>
                 </div>
@@ -125,14 +134,12 @@ export function HowItWorks() {
             Ready to protect your family?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://net.mulikampango.co.ke"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/download"
               className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 font-semibold transition-colors shadow-md hover:shadow-lg"
             >
               Download App Now
-            </a>
+            </Link>
             <a
               href="tel:+254704000004"
               className="px-6 py-3 bg-white border-2 border-primary text-primary rounded-lg hover:bg-primary/5 font-semibold transition-colors"
