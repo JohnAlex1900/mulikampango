@@ -52,7 +52,7 @@ export function Hero() {
                 Call Now
               </a>
               <a
-                href="https://net.mulikampango.com"
+                href="https://net.mulikampango.co.ke"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 font-semibold transition-colors shadow-md hover:shadow-lg transform hover:scale-105"
