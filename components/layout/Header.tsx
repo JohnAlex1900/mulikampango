@@ -63,7 +63,7 @@ export function Header() {
 
             {/* Download Button */}
             <a
-              href="https://net.mulikampango.com"
+              href="https://net.mulikampango.co.ke"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:flex items-center gap-2 px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition font-medium text-sm"
@@ -121,7 +121,7 @@ export function Header() {
               Call Us
             </a>
             <a
-              href="https://net.mulikampango.com"
+              href="https://net.mulikampango.co.ke"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition font-medium text-sm"
