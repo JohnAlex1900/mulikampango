@@ -153,7 +153,7 @@ export function Footer() {
 
         <div className="mt-10 mb-12 rounded-xl border border-white/10 bg-white/5 px-6 py-5">
           <h3 className="text-sm font-semibold text-white">
-            Kids Shield Disclaimer
+            Mulika Disclaimer
           </h3>
           <div className="mt-3 space-y-3 text-sm text-gray-300 leading-relaxed">
             <p>
