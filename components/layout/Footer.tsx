@@ -157,12 +157,12 @@ export function Footer() {
           </h3>
           <div className="mt-3 space-y-3 text-sm text-gray-300 leading-relaxed">
             <p>
-              Kids Shield service software is designed for monitoring your
+              Mulika service software is designed for monitoring your
               children on a smartphone you own or have proper consent to
               monitor. You must notify users of the mobile phone that they are
-              being monitored by Kids Shield service. Failure to do so may
+              being monitored by Mulika service. Failure to do so may
               result in the breaking of federal and state laws. If you install
-              Kids Shield service software onto a phone device that you do not
+              Mulika service software onto a phone device that you do not
               own or have proper consent to monitor, we will fully cooperate
               with law officials to the fullest extent possible.
             </p>
