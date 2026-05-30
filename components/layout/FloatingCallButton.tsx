@@ -16,7 +16,7 @@ export function FloatingCallButton() {
   return (
     <a
       href="tel:+254704000004"
-      className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-accent hover:bg-accent/90 shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-200 transform hover:scale-110"
+      className="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#ff6767] shadow-2xl shadow-[#ff6767]/35 transition-all duration-200 hover:scale-110 hover:bg-[#ff7b7b]"
       title="Call us for support"
     >
       <Phone className="w-6 h-6 text-white" />

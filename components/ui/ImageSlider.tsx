@@ -46,7 +46,7 @@ export function ImageSlider({ images, interval = 5000 }: ImageSliderProps) {
   }
 
   return (
-    <div className="relative w-full h-full overflow-hidden rounded-2xl">
+    <div className="relative w-full h-full overflow-hidden">
       {/* Slides Container */}
       <div className="relative w-full h-full">
         {images.map((image, index) => (

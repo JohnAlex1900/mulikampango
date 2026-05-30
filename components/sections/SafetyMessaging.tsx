@@ -1,105 +1,80 @@
-'use client'
+"use client";
 
-import { CheckCircle, Shield, Eye } from 'lucide-react'
+import { CheckCircle2, FileCheck2, Scale, ShieldCheck } from "lucide-react";
+
+const safeUse = [
+  "Use only on devices you own, manage, or have proper consent to configure.",
+  "Tell users when family or company device safety settings are active.",
+  "Follow local privacy, employment, child protection, and cybercrime laws.",
+];
+
+const avoid = [
+  "Covert tracking or unauthorized monitoring.",
+  "Phone intrusion, fake hacker branding, or illegal access.",
+  "Marketing that targets relationship surveillance or privacy invasion.",
+];
 
 export function SafetyMessaging() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-r from-primary/5 to-secondary/5">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Trusted by Parents Nationwide
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            Mulikampango is committed to your family's safety and privacy.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Privacy */}
-          <div className="flex flex-col items-center text-center p-6">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-              <Eye className="w-8 h-8 text-primary" />
+    <section className="bg-[#05051f] px-4 py-20 text-white sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+          <div>
+            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-cyan-300/15">
+              <Scale className="h-7 w-7 text-cyan-200" />
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-2">
-              Privacy First
-            </h3>
-            <p className="text-muted-foreground">
-              We never sell your data. End-to-end encryption protects all communications and information.
+            <p className="text-sm font-black uppercase tracking-[0.28em] text-cyan-200">
+              Legal-safe positioning
+            </p>
+            <h2 className="mt-4 text-4xl font-black leading-tight sm:text-5xl">
+              Sophisticated does not need to be risky.
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-indigo-100/75">
+              Mulikamtoto is presented as a responsible child monitoring and
+              mobile security platform. The message is premium, clear, and
+              protective without promising hidden access or unlawful use.
             </p>
           </div>
 
-          {/* Security */}
-          <div className="flex flex-col items-center text-center p-6">
-            <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
-              <Shield className="w-8 h-8 text-secondary" />
-            </div>
-            <h3 className="text-xl font-bold text-foreground mb-2">
-              Bank-Level Security
-            </h3>
-            <p className="text-muted-foreground">
-              AES-256 encryption and regular security audits keep your family data safe from threats.
-            </p>
-          </div>
-
-          {/* Support */}
-          <div className="flex flex-col items-center text-center p-6">
-            <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
-              <CheckCircle className="w-8 h-8 text-accent" />
-            </div>
-            <h3 className="text-xl font-bold text-foreground mb-2">
-              Always Here
-            </h3>
-            <p className="text-muted-foreground">
-              Our support team is available 24/7 to answer questions and help with any concerns.
-            </p>
-          </div>
-        </div>
-
-        {/* Bottom Section */}
-        <div className="mt-12 bg-white rounded-2xl p-8 border border-border">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                What Makes Us Different
-              </h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">Developed by parent experts with real-world experience</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">Transparent pricing with no hidden fees</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">Trusted by over 100,000 families worldwide</span>
-                </li>
+          <div className="grid gap-4 md:grid-cols-2">
+            <div className="rounded-lg border border-emerald-300/20 bg-emerald-300/10 p-6">
+              <div className="mb-5 flex items-center gap-3">
+                <ShieldCheck className="h-6 w-6 text-emerald-200" />
+                <h3 className="text-xl font-black">We support</h3>
+              </div>
+              <ul className="space-y-4">
+                {safeUse.map((item) => (
+                  <li key={item} className="flex gap-3 text-sm leading-6 text-emerald-50/85">
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-emerald-200" />
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                Certifications & Compliance
-              </h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">GDPR & CCPA Compliant</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">SOC 2 Type II Certified</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">ISO 27001 Security Standard</span>
-                </li>
+
+            <div className="rounded-lg border border-[#ff6767]/30 bg-[#ff6767]/10 p-6">
+              <div className="mb-5 flex items-center gap-3">
+                <FileCheck2 className="h-6 w-6 text-[#ffb4b4]" />
+                <h3 className="text-xl font-black">We avoid</h3>
+              </div>
+              <ul className="space-y-4">
+                {avoid.map((item) => (
+                  <li key={item} className="flex gap-3 text-sm leading-6 text-rose-50/85">
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#ffb4b4]" />
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
+        </div>
+
+        <div className="mt-10 rounded-lg border border-white/10 bg-white/[0.06] p-6 text-sm leading-7 text-indigo-100/80">
+          All services and software provided by Mulikamtoto are intended
+          strictly for lawful, authorized, and consent-based use only. Users are
+          solely responsible for complying with applicable laws.
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -5,8 +5,8 @@ import { FloatingCallButton } from '@/components/layout/FloatingCallButton'
 import { Download, BarChart3, Lock, Smartphone } from 'lucide-react'
 
 export const metadata = {
-  title: 'Tools & Dashboard - Mulikampango',
-  description: 'Access your Mulikampango dashboard and download the mobile app to start monitoring and protecting your family.',
+  title: 'Tools & Dashboard - Mulikamtoto',
+  description: 'Access the Mulikamtoto dashboard and mobile app for lawful family safety, device management, and cybersecurity setup.',
 }
 
 export default function ToolsPage() {
@@ -21,7 +21,7 @@ export default function ToolsPage() {
               Tools & Resources
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Access your dashboard and download the Mulikampango app to start protecting your family today.
+              Access the dashboard and app links for family safety setup, business device management, and authorized mobile security support.
             </p>
           </div>
         </section>
@@ -31,16 +31,16 @@ export default function ToolsPage() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
             <div className="text-center mb-8">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Powerful Tools Built for Modern Families
+                Practical Tools for Safer Devices
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Get everything you need to protect your family in one comprehensive platform
+                Configure parental controls, device policies, alerts, backup, and anti-theft protection from a simpler workflow.
               </p>
             </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <Image
                 src="/images/features-showcase.jpg"
-                alt="Mulikampango dashboard and monitoring tools showcase"
+                alt="Mulikamtoto dashboard and monitoring tools showcase"
                 width={1200}
                 height={600}
                 className="w-full h-auto object-cover"
@@ -61,28 +61,28 @@ export default function ToolsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Dashboard */}
               <a
-                href="https://mimi.mulikampango.com"
+                href="https://mimi.mulikampango.co.ke"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-8 rounded-2xl bg-gradient-to-br from-white to-blue-50 border-2 border-border hover:border-primary/50 hover:shadow-lg transition-all"
+                className="group p-8 rounded-lg bg-gradient-to-br from-white to-blue-50 border-2 border-border hover:border-primary/50 hover:shadow-lg transition-all"
               >
                 <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
                   <BarChart3 className="w-8 h-8 text-primary" />
                 </div>
                 <h2 className="text-2xl font-bold text-foreground mb-3">
-                  Parent Dashboard
+                  Family & Business Dashboard
                 </h2>
                 <p className="text-muted-foreground mb-6">
-                  Access your personal dashboard to monitor all your children's devices in real-time. View activity reports, set boundaries, and manage alerts from anywhere.
+                  Access the dashboard to review authorized devices, family safety settings, activity summaries, and company-owned phone policies.
                 </p>
                 <div className="space-y-2 mb-6">
                   <p className="text-sm font-semibold text-foreground flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
-                    Real-time activity monitoring
+                    Authorized activity summaries
                   </p>
                   <p className="text-sm font-semibold text-foreground flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
-                    Location tracking & geofencing
+                    Consent-based location sharing
                   </p>
                   <p className="text-sm font-semibold text-foreground flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
@@ -90,7 +90,7 @@ export default function ToolsPage() {
                   </p>
                   <p className="text-sm font-semibold text-foreground flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
-                    24/7 alerts & notifications
+                    Safety alerts & device status
                   </p>
                 </div>
                 <div className="inline-block px-6 py-3 bg-primary text-white rounded-lg font-semibold group-hover:bg-primary/90 transition-colors">
@@ -100,10 +100,10 @@ export default function ToolsPage() {
 
               {/* Mobile App */}
               <a
-                href="https://net.mulikampango.com"
+                href="https://net.mulikampango.co.ke"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-8 rounded-2xl bg-gradient-to-br from-white to-blue-50 border-2 border-border hover:border-secondary/50 hover:shadow-lg transition-all"
+                className="group p-8 rounded-lg bg-gradient-to-br from-white to-blue-50 border-2 border-border hover:border-secondary/50 hover:shadow-lg transition-all"
               >
                 <div className="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
                   <Download className="w-8 h-8 text-secondary" />
@@ -112,7 +112,7 @@ export default function ToolsPage() {
                   Mobile App
                 </h2>
                 <p className="text-muted-foreground mb-6">
-                  Download the Mulikampango app on your child's device to enable full monitoring capabilities. Fast setup, powerful protection, easy to use.
+                  Download the Mulikamtoto app for authorized family protection, anti-theft configuration, and mobile security setup.
                 </p>
                 <div className="space-y-2 mb-6">
                   <p className="text-sm font-semibold text-foreground flex items-center gap-2">
@@ -129,7 +129,7 @@ export default function ToolsPage() {
                   </p>
                   <p className="text-sm font-semibold text-foreground flex items-center gap-2">
                     <span className="w-2 h-2 bg-secondary rounded-full"></span>
-                    Stealth mode available
+                    Consent-based setup
                   </p>
                 </div>
                 <div className="inline-block px-6 py-3 bg-secondary text-white rounded-lg font-semibold group-hover:bg-secondary/90 transition-colors">
@@ -151,31 +151,31 @@ export default function ToolsPage() {
               {[
                 {
                   number: 1,
-                  title: 'Create Your Parent Account',
-                  description: 'Sign up for your free parent account at the dashboard. Takes less than 2 minutes.',
+                  title: 'Create Your Account',
+                  description: 'Start from the dashboard and choose family protection, business device management, or a security setup.',
                 },
                 {
                   number: 2,
                   title: 'Download the Mobile App',
-                  description: 'Download the Mulikampango app from the App Store or Google Play on your child\'s device.',
+                  description: 'Download the Mulikamtoto app on the device you own, manage, or have permission to configure.',
                 },
                 {
                   number: 3,
-                  title: 'Complete Installation',
-                  description: 'Follow the setup wizard to complete installation and link the device to your parent account.',
+                  title: 'Confirm Authorization',
+                  description: 'Make sure the setup is lawful, authorized, and appropriate for the user and device.',
                 },
                 {
                   number: 4,
                   title: 'Configure Settings',
-                  description: 'Set up monitoring preferences, geofences, alerts, and content filters through your dashboard.',
+                  description: 'Set up screen time, app controls, safe zones, alerts, backup, and anti-theft preferences.',
                 },
                 {
                   number: 5,
-                  title: 'Start Monitoring',
-                  description: 'Your child\'s device is now monitored. View activity, location, and receive instant alerts.',
+                  title: 'Review and Improve',
+                  description: 'Use reports and support guidance to maintain safer device habits over time.',
                 },
               ].map((step, index) => (
-                <div key={index} className="flex gap-6 p-6 bg-white rounded-xl border border-border">
+                <div key={index} className="flex gap-6 p-6 bg-white rounded-lg border border-border">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-primary text-white font-bold">
                       {step.number}
@@ -199,12 +199,12 @@ export default function ToolsPage() {
         <section className="py-16 md:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
-              System Requirements
+              Device Setup Requirements
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* iOS Requirements */}
-              <div className="p-8 rounded-2xl bg-gradient-to-br from-white to-blue-50 border border-border">
+              <div className="p-8 rounded-lg bg-gradient-to-br from-white to-blue-50 border border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
                   <Smartphone className="w-6 h-6 text-primary" />
                   iOS Requirements
@@ -234,7 +234,7 @@ export default function ToolsPage() {
               </div>
 
               {/* Android Requirements */}
-              <div className="p-8 rounded-2xl bg-gradient-to-br from-white to-blue-50 border border-border">
+              <div className="p-8 rounded-lg bg-gradient-to-br from-white to-blue-50 border border-border">
                 <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
                   <Smartphone className="w-6 h-6 text-secondary" />
                   Android Requirements
@@ -273,11 +273,11 @@ export default function ToolsPage() {
               Ready to Get Started?
             </h2>
             <p className="text-white/90 text-lg mb-8">
-              Access your dashboard or download the app now. Your family's safety is just minutes away.
+              Access the dashboard or app while keeping every setup lawful, authorized, and consent-based.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://net.mulikampango.com"
+                href="https://net.mulikampango.co.ke"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 bg-white text-primary rounded-lg hover:bg-gray-100 font-bold transition-colors"
@@ -285,7 +285,7 @@ export default function ToolsPage() {
                 Download App
               </a>
               <a
-                href="https://mimi.mulikampango.com"
+                href="https://mimi.mulikampango.co.ke"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 bg-accent text-white rounded-lg hover:bg-accent/90 font-bold transition-colors"

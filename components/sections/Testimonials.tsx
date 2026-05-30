@@ -1,79 +1,76 @@
 'use client'
 
-import { Star } from 'lucide-react'
+import { Camera, Cloud, Code2, Router, Server, Wifi } from 'lucide-react'
 
-const testimonials = [
+const services = [
   {
-    quote: 'Mulikampango gave us peace of mind. We can finally let our teenager have some independence while staying informed about their safety.',
-    author: 'Sarah M.',
-    role: 'Parent of 2',
-    rating: 5,
+    icon: Code2,
+    title: 'Web Development',
+    description: 'Modern websites, dashboards, and business systems that support your digital operations.',
   },
   {
-    quote: 'The interface is so intuitive. Within minutes of setup, I could monitor my daughter\'s location and app usage. Highly recommended!',
-    author: 'James L.',
-    role: 'Single Parent',
-    rating: 5,
+    icon: Camera,
+    title: 'CCTV Installation',
+    description: 'Camera planning, installation, configuration, and remote viewing support for homes and businesses.',
   },
   {
-    quote: 'Customer support is exceptional. When I had questions, they responded immediately. This is what great service looks like.',
-    author: 'Michelle R.',
-    role: 'Parent of 3',
-    rating: 5,
+    icon: Wifi,
+    title: 'Wi-Fi & Network Security',
+    description: 'Router hardening, guest networks, password hygiene, and safer connectivity for shared spaces.',
   },
   {
-    quote: 'The geofencing feature alone is worth it. I get alerts when my kids leave school, and it gives me so much peace of mind.',
-    author: 'David T.',
-    role: 'Parent of 1',
-    rating: 5,
+    icon: Cloud,
+    title: 'Cloud Backup Services',
+    description: 'Secure backup planning for photos, contacts, documents, and business-critical data.',
+  },
+  {
+    icon: Router,
+    title: 'Smart Home Systems',
+    description: 'Connected home setup with privacy-aware controls, access management, and security basics.',
+  },
+  {
+    icon: Server,
+    title: 'Managed IT Support',
+    description: 'Ongoing device setup, troubleshooting, maintenance, and business technology support.',
   },
 ]
 
 export function Testimonials() {
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            What Parents Are Saying
+    <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-12 text-center md:mb-16">
+          <p className="text-sm font-black uppercase tracking-[0.28em] text-primary">
+            Growth services
+          </p>
+          <h2 className="mt-4 text-4xl font-black text-[#101042] sm:text-5xl">
+            More Digital Protection Services
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join thousands of families who already trust Mulikampango with their children's safety.
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-600">
+            Mulikamtoto grows beyond child monitoring into practical cybersecurity and technology support.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {testimonials.map((testimonial, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service, index) => {
+            const Icon = service.icon
+            return (
             <div
               key={index}
-              className="p-6 rounded-xl bg-gradient-to-br from-white to-blue-50 border border-border hover:shadow-md transition-all"
+              className="rounded-lg border border-slate-200 bg-white p-6 shadow-lg shadow-slate-200/60 transition hover:-translate-y-1 hover:shadow-xl"
             >
-              {/* Rating */}
-              <div className="flex gap-1 mb-4">
-                {Array(testimonial.rating).fill(0).map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-4 h-4 fill-accent text-accent"
-                  />
-                ))}
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-cyan-50">
+                <Icon className="w-6 h-6 text-secondary" />
               </div>
-
-              {/* Quote */}
-              <p className="text-muted-foreground mb-6 leading-relaxed italic">
-                "{testimonial.quote}"
+              <h3 className="mb-2 text-lg font-black text-[#101042]">
+                {service.title}
+              </h3>
+              <p className="text-sm leading-7 text-slate-600">
+                {service.description}
               </p>
-
-              {/* Author */}
-              <div>
-                <p className="font-bold text-foreground">
-                  {testimonial.author}
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  {testimonial.role}
-                </p>
-              </div>
             </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>

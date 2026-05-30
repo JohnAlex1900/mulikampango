@@ -1,83 +1,107 @@
-'use client'
+"use client";
 
-import { MapPin, Zap, Lock, Users } from 'lucide-react'
+import {
+  BellRing,
+  CalendarClock,
+  Cloud,
+  Eye,
+  FileSearch,
+  Map,
+  MessageSquareText,
+  ShieldAlert,
+} from "lucide-react";
 
 const features = [
-  {
-    icon: MapPin,
-    title: 'GPS Location Tracking',
-    description: 'Real-time GPS location with geofencing alerts. Know when your child arrives at school, work, or leaves designated safe zones.',
-    details: ['Accurate to 5 meters', 'Geofence alerts', 'Location history'],
-  },
-  {
-    icon: Zap,
-    title: 'Instant Alert System',
-    description: 'Get push notifications instantly for dangerous behavior, inappropriate content, and emergency situations.',
-    details: ['Real-time alerts', 'Custom triggers', 'Emergency contacts'],
-  },
-  {
-    icon: Lock,
-    title: 'Privacy & Security',
-    description: 'Military-grade encryption protects all data. Your family\'s privacy is our top priority.',
-    details: ['AES-256 encryption', 'GDPR compliant', 'Zero tracking'],
-  },
-  {
-    icon: Users,
-    title: 'Multi-Device Support',
-    description: 'Monitor all family devices from one dashboard. Perfect for families with multiple children.',
-    details: ['iOS & Android', 'Windows & Mac', 'Web dashboard'],
-  },
-]
+  { icon: MessageSquareText, title: "Message safety signals", detail: "Help parents notice bullying, scams, or risky conversations." },
+  { icon: Map, title: "Pinpoint safe zones", detail: "Location sharing, check-ins, and family-approved places." },
+  { icon: CalendarClock, title: "Plans and routines", detail: "Screen time schedules for sleep, study, and device-free moments." },
+  { icon: FileSearch, title: "App and web review", detail: "Understand searches, sites, apps, and digital behavior patterns." },
+  { icon: BellRing, title: "Smart alerts", detail: "Relevant notifications without overwhelming the parent." },
+  { icon: ShieldAlert, title: "Anti-theft setup", detail: "Remote lock, wipe readiness, IMEI guidance, and backup support." },
+  { icon: Cloud, title: "Backup recovery", detail: "Secure photos, contacts, documents, and phone recovery basics." },
+  { icon: Eye, title: "Privacy audits", detail: "Review permissions, remove suspicious apps, and harden accounts." },
+];
 
 export function FeatureHighlights() {
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Powerful Features Built for Family Safety
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Every feature is designed with your family's safety and privacy in mind.
-          </p>
-        </div>
+    <section className="overflow-hidden bg-[#f7f8ff] px-4 py-20 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-12 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.28em] text-primary">
+              Control panel
+            </p>
+            <h2 className="mt-4 text-4xl font-black leading-tight text-[#101042] sm:text-5xl">
+              Powerful technology baked into one calm dashboard.
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              The experience should feel like a modern monitoring platform:
+              fast to scan, easy to adjust, and focused on child safety rather
+              than fear-based claims.
+            </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {features.map((feature, index) => {
-            const Icon = feature.icon
-            return (
-              <div
-                key={index}
-                className="p-8 rounded-2xl bg-gradient-to-br from-white to-blue-50 border border-border hover:shadow-lg transition-all hover:border-primary/30"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-foreground mb-2">
-                      {feature.title}
-                    </h3>
-                    <p className="text-muted-foreground mb-4 leading-relaxed">
-                      {feature.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {feature.details.map((detail, i) => (
-                        <span
-                          key={i}
-                          className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-medium"
-                        >
-                          {detail}
-                        </span>
-                      ))}
+            <div className="mt-8 grid gap-3 sm:grid-cols-2">
+              {features.map((feature) => {
+                const Icon = feature.icon;
+                return (
+                  <div key={feature.title} className="flex gap-3 rounded-lg bg-white p-4 shadow-sm">
+                    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-[#eef2ff]">
+                      <Icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-black text-[#101042]">{feature.title}</p>
+                      <p className="mt-1 text-sm leading-5 text-slate-600">{feature.detail}</p>
                     </div>
                   </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-cyan-300/30 to-indigo-500/20 blur-3xl" />
+            <div className="relative rounded-[2rem] bg-[#05051f] p-4 shadow-2xl shadow-indigo-950/30">
+              <div className="rounded-[1.5rem] bg-white p-4">
+                <div className="flex items-center justify-between border-b border-slate-100 pb-4">
+                  <div>
+                    <p className="text-xs font-black uppercase tracking-[0.2em] text-primary">
+                      Today
+                    </p>
+                    <h3 className="mt-1 text-2xl font-black text-[#101042]">
+                      Safety summary
+                    </h3>
+                  </div>
+                  <div className="rounded-lg bg-emerald-50 px-3 py-2 text-sm font-black text-emerald-700">
+                    Protected
+                  </div>
+                </div>
+
+                <div className="mt-4 grid grid-cols-2 gap-3">
+                  {[
+                    ["Apps reviewed", "18"],
+                    ["Safe zones", "4"],
+                    ["Alerts", "2"],
+                    ["Backups", "On"],
+                  ].map(([label, value]) => (
+                    <div key={label} className="rounded-lg bg-slate-50 p-4">
+                      <p className="text-xs font-bold text-slate-500">{label}</p>
+                      <p className="mt-2 text-2xl font-black text-[#101042]">{value}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-4 rounded-lg bg-[#101054] p-4 text-white">
+                  <p className="font-black">Recommended action</p>
+                  <p className="mt-2 text-sm leading-6 text-indigo-100/80">
+                    Review new app permissions and adjust screen time before
+                    school night mode starts at 8:30 PM.
+                  </p>
                 </div>
               </div>
-            )
-          })}
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

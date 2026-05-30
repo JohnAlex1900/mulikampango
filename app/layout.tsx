@@ -1,19 +1,15 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 
 import './globals.css'
 
-const _geist = Geist({ subsets: ['latin'] })
-const _geistMono = Geist_Mono({ subsets: ['latin'] })
-
 export const metadata: Metadata = {
-  title: 'Mulikampango - Parental Monitoring & Child Safety | Protect Your Family',
-  description: 'Keep your children safe with Mulikampango. Real-time monitoring, location tracking, app control, and 24/7 alerts. Trusted by 100,000+ families. Free trial available.',
-  keywords: 'parental control, monitoring app, child safety, location tracking, family protection',
+  title: 'Mulikamtoto - Mobile Security, Family Safety & Device Management',
+  description: 'Secure, manage and protect devices legally and responsibly with Mulikamtoto family safety, parental controls, business device management, anti-theft setup, and mobile cybersecurity services.',
+  keywords: 'parental control, child online safety, mobile security, business device management, anti-theft setup, cybersecurity services',
   generator: 'v0.app',
   openGraph: {
-    title: 'Mulikampango - Parental Monitoring & Child Safety',
-    description: 'Advanced child safety and parental monitoring. Real-time alerts, location tracking, and complete device control.',
+    title: 'Mulikamtoto - Mobile Security & Family Safety',
+    description: 'Lawful, authorized and consent-based digital protection for families and businesses.',
     type: 'website',
   },
 }

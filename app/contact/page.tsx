@@ -5,9 +5,9 @@ import { FloatingCallButton } from "@/components/layout/FloatingCallButton";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export const metadata = {
-  title: "Contact Us - Mulikampango Support",
+  title: "Contact Us - Mulikamtoto Support",
   description:
-    "Get in touch with our 24/7 support team. We're here to help with any questions about Mulikampango.",
+    "Get in touch with our 24/7 support team. We're here to help with any questions about Mulikamtoto.",
 };
 
 export default function ContactPage() {
@@ -23,7 +23,7 @@ export default function ContactPage() {
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Our support team is available 24/7 to answer your questions and
-              help you get the most out of Mulikampango.
+              help you get the most out of Mulikamtoto.
             </p>
           </div>
         </section>
@@ -51,7 +51,7 @@ export default function ContactPage() {
 
               {/* Email */}
               <a
-                href="mailto:info@mulikampango.com"
+                href="mailto:info@mulikampango.co.ke"
                 className="p-6 rounded-xl bg-gradient-to-br from-white to-blue-50 border border-border hover:shadow-md hover:border-secondary/30 transition-all"
               >
                 <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
@@ -61,7 +61,7 @@ export default function ContactPage() {
                   Email
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  info@mulikampango.com
+                  info@mulikampango.co.ke
                 </p>
               </a>
 

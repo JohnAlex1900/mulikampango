@@ -4,116 +4,118 @@ import { Footer } from "@/components/layout/Footer";
 import { FloatingCallButton } from "@/components/layout/FloatingCallButton";
 import {
   MapPin,
-  Zap,
   Lock,
   Users,
   Smartphone,
   BarChart3,
   Bell,
-  TrendingUp,
+  BriefcaseBusiness,
+  Cloud,
+  GraduationCap,
+  ShieldAlert,
 } from "lucide-react";
 
 export const metadata = {
-  title: "Features - Mulikampango Parental Monitoring",
+  title: "Services - Mulikamtoto Mobile Security",
   description:
-    "Explore all the powerful features that make Mulikampango the most trusted parental monitoring solution.",
+    "Explore Mulikamtoto parental controls, business device management, anti-theft setup, mobile cybersecurity, and digital awareness training.",
 };
 
 const features = [
   {
     icon: MapPin,
-    title: "Real-Time GPS Tracking",
+    title: "Parental Control Solutions",
     description:
-      "Know exactly where your children are at any moment with accurate GPS location tracking. Set geofencing boundaries and get instant alerts when they leave safe zones.",
+      "Help children build safer digital habits with transparent family safety settings and age-appropriate controls.",
     highlights: [
-      "Accurate within 5 meters",
-      "Geofence alerts",
-      "Location history & timeline",
-      "Battery optimization",
+      "Screen time management",
+      "App and website blocking",
+      "Child online safety setup",
+      "Location sharing with consent",
     ],
   },
   {
-    icon: Zap,
-    title: "Instant Alert System",
+    icon: BriefcaseBusiness,
+    title: "Employee Device Management",
     description:
-      "Receive real-time notifications for important events and dangerous behavior. Customize alerts based on your family's needs and priorities.",
+      "Prepare company-owned phones for responsible work use with clear policies, inventory, and recovery options.",
     highlights: [
-      "Real-time push notifications",
-      "Custom alert triggers",
-      "Emergency SOS alerts",
-      "Multi-device support",
+      "Company phone setup",
+      "Device inventory",
+      "Remote lock and wipe readiness",
+      "Productivity reports",
     ],
   },
   {
-    icon: Smartphone,
-    title: "App & Web Usage Monitoring",
+    icon: ShieldAlert,
+    title: "Mobile Cybersecurity Services",
     description:
-      "Monitor all apps installed on your child's device and track their usage patterns. Block harmful apps and set healthy screen time limits.",
+      "Recover from common device threats and reduce future risk with practical mobile security support.",
     highlights: [
-      "App usage analytics",
-      "Block inappropriate apps",
-      "Screen time scheduling",
-      "App categorization",
+      "Hacked phone cleanup",
+      "WhatsApp recovery guidance",
+      "Scam detection",
+      "Malware removal",
     ],
   },
   {
     icon: Bell,
-    title: "Screen Time Management",
+    title: "Anti-Cyberbullying Setup",
     description:
-      "Set healthy device boundaries and enforce screen time limits. Schedule device-free times for meals, homework, and sleep.",
+      "Configure safer communication habits and help parents spot signs of risky interactions.",
     highlights: [
-      "Customizable time limits",
-      "Scheduled downtime",
-      "Content filtering",
-      "Social media restrictions",
+      "Conversation guidance",
+      "Risk awareness",
+      "Safety alerts",
+      "Support follow-up",
     ],
   },
   {
     icon: Lock,
-    title: "Content Filtering",
+    title: "Privacy Audits",
     description:
-      "Protect your children from inappropriate content across all devices. Automatically block adult websites and harmful content.",
+      "Review app permissions, account settings, backups, and weak points that expose personal or business data.",
     highlights: [
-      "Website filtering",
-      "Safe search enforcement",
-      "YouTube restrictions",
-      "App store controls",
+      "Permission review",
+      "Suspicious app checks",
+      "Secure backup setup",
+      "Account hardening",
     ],
   },
   {
     icon: BarChart3,
-    title: "Detailed Activity Reports",
+    title: "Dashboard Reports",
     description:
-      "Access comprehensive reports on your child's device activity, app usage, and browsing history. Understand their digital behavior.",
+      "Use the dashboard to review device status, family safety settings, and business device activity where authorized.",
     highlights: [
       "Daily activity summaries",
-      "Usage trends & analytics",
-      "Browsing history",
-      "Export reports",
+      "Usage trends",
+      "Device status",
+      "Policy review",
     ],
   },
   {
-    icon: Users,
-    title: "Multi-Device Monitoring",
+    icon: GraduationCap,
+    title: "Digital Training & Awareness",
     description:
-      "Monitor all your family's devices from a single dashboard. Manage multiple children's profiles and customize settings for each.",
+      "Train families and teams to recognize fake apps, scams, WhatsApp compromise signs, and unsafe device habits.",
     highlights: [
-      "Monitor iOS & Android",
-      "Windows & Mac support",
-      "Unified dashboard",
-      "Multi-child profiles",
+      "Android security basics",
+      "Fake app detection",
+      "Online safety awareness",
+      "Scam prevention",
     ],
   },
   {
-    icon: Smartphone,
-    title: "24/7 Customer Support",
+    icon: Cloud,
+    title: "Cloud Backup & Recovery",
     description:
-      "Our dedicated support team is always available to help. Get answers via phone, email, or live chat whenever you need assistance.",
+      "Set up safer backups and recovery plans for phones, photos, contacts, business files, and important records.",
     highlights: [
-      "24/7 phone support",
-      "Live chat support",
-      "Video tutorials",
-      "Knowledge base",
+      "Backup setup",
+      "Recovery planning",
+      "Data protection",
+      "Managed IT support",
     ],
   },
 ];
@@ -127,12 +129,12 @@ export default function FeaturesPage() {
         <section className="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-secondary/10">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Powerful Features for Family Safety
+              Services for Safer Devices
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Every feature is designed with your family's safety and privacy in
-              mind. Explore what makes Mulikampango the most comprehensive
-              parental monitoring solution.
+              Family protection, business device management, anti-theft setup,
+              and mobile cybersecurity services framed for lawful,
+              consent-based use.
             </p>
           </div>
         </section>
@@ -142,16 +144,16 @@ export default function FeaturesPage() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                All-In-One Dashboard
+                A Clear Dashboard for Authorized Devices
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Manage your family's safety from one intuitive, modern dashboard
+                Review family safety settings, device status, and business phone policies from one place.
               </p>
             </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <Image
                 src="/images/features-showcase.jpg"
-                alt="Mulikampango dashboard features showcase"
+                alt="Mulikamtoto dashboard features showcase"
                 width={1200}
                 height={600}
                 className="w-full h-auto object-cover animate-fadeIn"
@@ -172,7 +174,7 @@ export default function FeaturesPage() {
                 return (
                   <div
                     key={index}
-                    className="p-8 rounded-2xl bg-gradient-to-br from-white to-blue-50 border border-border hover:shadow-lg transition-all"
+                    className="p-8 rounded-lg bg-gradient-to-br from-white to-blue-50 border border-border hover:shadow-lg transition-all"
                   >
                     <div className="flex items-start gap-4 mb-4">
                       <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -207,13 +209,13 @@ export default function FeaturesPage() {
         <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Experience All Features Risk-Free
+              Get a Security Audit or Start Setup
             </h2>
             <p className="text-white/90 text-lg mb-8">
-              Start your free 14-day trial today. No credit card required.
+              Choose family protection, mobile cybersecurity, or business device management.
             </p>
             <a
-              href="https://net.mulikampango.com"
+              href="https://net.mulikampango.co.ke"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 bg-white text-primary rounded-lg hover:bg-gray-100 font-bold transition-colors"

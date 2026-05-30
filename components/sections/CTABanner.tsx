@@ -1,41 +1,53 @@
 "use client";
 
-import { Phone, Download } from "lucide-react";
+import { Download, LayoutDashboard, Phone } from "lucide-react";
 
 export function CTABanner() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-          Protect Your Family Today
-        </h2>
-        <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-          Join over 100,000 families who trust Mulikampango to keep their
-          children safe. Start your free trial now.
-        </p>
+    <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-[#101042] p-8 text-white shadow-2xl shadow-indigo-950/25 sm:p-12">
+        <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.28em] text-cyan-200">
+              Ready when you are
+            </p>
+            <h2 className="mt-4 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">
+              Start protecting your child's digital world with Mulikamtoto.
+            </h2>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-indigo-100/75">
+              Download the app, open the dashboard, or call support for a guided
+              family protection setup.
+            </p>
+          </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="https://net.mulikampango.co.ke"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary rounded-lg hover:bg-gray-100 font-bold text-lg transition-colors shadow-lg"
-          >
-            <Download className="w-5 h-5" />
-            Download App
-          </a>
-          <a
-            href="tel:+254704000004"
-            className="flex items-center justify-center gap-2 px-8 py-4 bg-accent text-white rounded-lg hover:bg-accent/90 font-bold text-lg transition-colors shadow-lg"
-          >
-            <Phone className="w-5 h-5" />
-            Call Now
-          </a>
+          <div className="flex flex-col gap-3 sm:min-w-64">
+            <a
+              href="https://net.mulikampango.co.ke"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#ff6767] px-6 py-4 font-black text-white shadow-xl shadow-[#ff6767]/20 transition hover:bg-[#ff7b7b]"
+            >
+              <Download className="h-5 w-5" />
+              Download App
+            </a>
+            <a
+              href="https://mimi.mulikampango.co.ke"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-6 py-4 font-black text-[#101042] transition hover:bg-cyan-50"
+            >
+              <LayoutDashboard className="h-5 w-5" />
+              Open Dashboard
+            </a>
+            <a
+              href="tel:+254704000004"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/15 px-6 py-4 font-black text-white transition hover:bg-white/10"
+            >
+              <Phone className="h-5 w-5" />
+              Call Support
+            </a>
+          </div>
         </div>
-
-        <p className="text-white/80 text-sm mt-6">
-          No credit card required. Free for the first 14 days.
-        </p>
       </div>
     </section>
   );

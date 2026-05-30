@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 @layer utilities {
@@ -92,27 +93,27 @@ body {
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 210 13% 28%;
+    --foreground: 242 65% 16%;
     --card: 0 0% 100%;
-    --card-foreground: 210 13% 28%;
+    --card-foreground: 242 65% 16%;
     --popover: 0 0% 100%;
-    --popover-foreground: 210 13% 28%;
-    --primary: 207 100% 50%;
+    --popover-foreground: 242 65% 16%;
+    --primary: 235 83% 58%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 174 100% 41%;
+    --secondary: 189 94% 43%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 210 20% 92%;
-    --muted-foreground: 210 10% 48%;
-    --accent: 34 97% 56%;
+    --muted: 232 56% 96%;
+    --muted-foreground: 226 18% 44%;
+    --accent: 0 100% 70%;
     --accent-foreground: 0 0% 8%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 210 18% 92%;
-    --input: 210 18% 92%;
-    --ring: 207 100% 50%;
-    --chart-1: 207 100% 50%;
-    --chart-2: 174 100% 41%;
-    --chart-3: 34 97% 56%;
+    --border: 230 35% 90%;
+    --input: 230 35% 90%;
+    --ring: 235 83% 58%;
+    --chart-1: 235 83% 58%;
+    --chart-2: 189 94% 43%;
+    --chart-3: 0 100% 70%;
     --chart-4: 210 18% 85%;
     --chart-5: 210 20% 92%;
     --radius: 0.5rem;

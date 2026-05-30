@@ -9,59 +9,61 @@ import {
 
 const faqs = [
   {
-    question: "Is Mulikampango legal to use?",
+    question: "Is Mulikamtoto legal to use?",
     answer:
-      "Yes, Mulikampango is fully legal when used by parents/guardians to monitor their own minor children. Parental monitoring apps are designed for family safety and are protected by family law in most jurisdictions.",
+      "Mulikamtoto services are intended strictly for lawful, authorized, and consent-based use only. Parents, guardians, and businesses must comply with local privacy, employment, and cybercrime laws.",
   },
   {
-    question: "How long does installation take?",
+    question: "What can parents use it for?",
     answer:
-      "Installation typically takes less than 5 minutes. Download the app from your store, create an account, and follow the simple setup wizard. No technical knowledge required.",
+      "Parents can set screen time boundaries, block apps or websites, configure safer search, review usage patterns, and set up location sharing for child safety.",
   },
   {
-    question: "Is my child's privacy protected?",
+    question: "Do you support business device management?",
     answer:
-      "Absolutely. All data is encrypted with AES-256 military-grade encryption. We comply with GDPR, CCPA, and all privacy regulations. We never sell data to third parties.",
+      "Yes. We help set up company-owned phones, device inventory, location and usage policies, remote lock or wipe readiness, and productivity reporting where legally permitted.",
   },
   {
-    question: "What devices does it support?",
+    question: "Can you help with hacked phones or WhatsApp issues?",
     answer:
-      "Mulikampango works on iOS, Android, Windows, and macOS. Monitor all your family's devices from a single dashboard accessible on any browser.",
+      "We provide mobile cybersecurity support, including suspicious app review, malware cleanup guidance, privacy audits, secure backup setup, scam detection, and WhatsApp recovery guidance.",
   },
   {
-    question: "Can my child detect the app?",
+    question: "Do you offer unauthorized monitoring?",
     answer:
-      "The app can be installed in stealth mode on supported devices, making it invisible from the home screen while still monitoring in the background.",
+      "No. Mulikamtoto is not positioned for covert tracking, unauthorized access, or unlawful surveillance. All services require ownership, authorization, or proper consent.",
   },
   {
     question: "What if I need help?",
     answer:
-      "Our support team is available 24/7 via phone, email, and live chat. We also have a comprehensive knowledge base with video tutorials and guides.",
+      "Call our support team for a family protection setup, business device management, cybersecurity consultation, anti-theft configuration, or digital safety training.",
   },
 ];
 
 export function FAQ() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-white to-blue-50">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="bg-[#f7f8ff] px-4 py-20 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-4xl">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <p className="text-sm font-black uppercase tracking-[0.28em] text-primary">
+            FAQ
+          </p>
+          <h2 className="mt-4 text-4xl font-black text-[#101042] sm:text-5xl">
             Frequently Asked Questions
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Got questions? We've got answers. Check out the most common
-            questions from our community.
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-600">
+            Clear answers about lawful use, family safety, business setup, and mobile cybersecurity support.
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl border border-border p-6 md:p-8">
+        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/70 md:p-8">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-lg font-semibold text-foreground hover:text-primary py-4">
+                <AccordionTrigger className="py-5 text-left text-lg font-black text-[#101042] hover:text-primary">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pb-4">
+                <AccordionContent className="pb-5 leading-7 text-slate-600">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -73,7 +75,7 @@ export function FAQ() {
           <p className="text-muted-foreground mb-4">Still have questions?</p>
           <a
             href="tel:+254704000004"
-            className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 font-semibold transition-colors shadow-md hover:shadow-lg"
+            className="inline-block rounded-lg bg-[#101042] px-6 py-3 font-black text-white shadow-lg shadow-indigo-950/15 transition hover:bg-primary"
           >
             Call Us Now
           </a>
