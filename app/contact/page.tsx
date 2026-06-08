@@ -1,309 +1,166 @@
-import Image from "next/image";
+import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingCallButton } from "@/components/layout/FloatingCallButton";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  Clock,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
+import { ContactLeadForm } from "@/components/sections/ContactLeadForm";
 
 export const metadata = {
-  title: "Contact Us - Mulikamtoto Support",
+  title: "Contact Mulikamtoto",
   description:
-    "Get in touch with our 24/7 support team. We're here to help with any questions about Mulikamtoto.",
+    "Request a child safety, device management, mobile security, or web development consultation from Mulikamtoto.",
 };
+
+const serviceHighlights = [
+  {
+    title: "Child safety setup",
+    copy: "Screen time, app blocking, safe zones, and online safety routines for families.",
+  },
+  {
+    title: "Business device management",
+    copy: "Policies, inventory, remote wipe readiness, and lawful device management for company phones.",
+  },
+  {
+    title: "Web development & IT",
+    copy: "Secure websites, hosting, backups, and managed IT support for organizations that need a premium presence.",
+  },
+];
 
 export default function ContactPage() {
   return (
     <>
       <Header />
-      <main>
-        {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-secondary/10">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Get in Touch
-            </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our support team is available 24/7 to answer your questions and
-              help you get the most out of Mulikamtoto.
-            </p>
-          </div>
-        </section>
+      <main className="bg-[#f7f8ff] text-[#101042]">
+        <section className="relative isolate overflow-hidden bg-[#05051f] px-4 py-16 text-white sm:px-6 lg:px-8">
+          <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(41,125,255,0.35),transparent_28%),radial-gradient(circle_at_80%_10%,rgba(255,103,103,0.18),transparent_24%),linear-gradient(180deg,#05051f_0%,#0b0b42_52%,#101054_100%)]" />
+          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+            <div>
+              <p className="text-sm font-black uppercase tracking-[0.28em] text-cyan-200">
+                Contact
+              </p>
+              <h1 className="mt-4 max-w-3xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
+                Start with a security audit, then we’ll guide you to the right
+                setup.
+              </h1>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-indigo-100/82">
+                Choose the service you need, send a detailed inquiry, and we’ll
+                follow up with the next steps for lawful family safety, business
+                device management, or secure web support.
+              </p>
 
-        {/* Contact Methods */}
-        <section className="py-16 md:py-24 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-              {/* Primary Phone */}
-              <a
-                href="tel:+254704000004"
-                className="p-6 rounded-xl bg-gradient-to-br from-primary/5 to-primary/10 border-2 border-primary hover:shadow-md hover:border-primary/50 transition-all transform hover:scale-105"
-              >
-                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
-                  <Phone className="w-6 h-6 text-primary font-bold" />
-                </div>
-                <h3 className="text-lg font-bold text-foreground mb-2">
-                  Primary Contact
-                </h3>
-                <p className="text-primary font-semibold">+254 704 000 004</p>
-                <p className="text-muted-foreground text-xs mt-1">
-                  Click to call
-                </p>
-              </a>
-
-              {/* Email */}
-              <a
-                href="mailto:info@mulikampango.co.ke"
-                className="p-6 rounded-xl bg-gradient-to-br from-white to-blue-50 border border-border hover:shadow-md hover:border-secondary/30 transition-all"
-              >
-                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Mail className="w-6 h-6 text-secondary" />
-                </div>
-                <h3 className="text-lg font-bold text-foreground mb-2">
-                  Email
-                </h3>
-                <p className="text-muted-foreground text-sm">
-                  info@mulikampango.co.ke
-                </p>
-              </a>
-
-              {/* Hours */}
-              <div className="p-6 rounded-xl bg-gradient-to-br from-white to-blue-50 border border-border">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Clock className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-bold text-foreground mb-2">
-                  Hours
-                </h3>
-                <p className="text-muted-foreground text-sm">
-                  Available 24/7
-                  <br />
-                  365 days a year
-                </p>
-              </div>
-            </div>
-
-            {/* Alternative Phone Numbers */}
-            <div className="bg-blue-50 rounded-2xl border border-blue-100 p-8">
-              <h3 className="text-xl font-bold text-foreground mb-4">
-                Alternative Contact Numbers
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <a
-                  href="tel:+254704000002"
-                  className="flex items-center gap-3 p-4 bg-white rounded-lg hover:bg-blue-50 transition-colors border border-blue-100"
-                >
-                  <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground font-semibold">
-                    +254 704 000 002
-                  </span>
-                </a>
-                <a
-                  href="tel:+254780000004"
-                  className="flex items-center gap-3 p-4 bg-white rounded-lg hover:bg-blue-50 transition-colors border border-blue-100"
-                >
-                  <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground font-semibold">
-                    +254 780 000 004
-                  </span>
-                </a>
-                <a
-                  href="tel:+254780000002"
-                  className="flex items-center gap-3 p-4 bg-white rounded-lg hover:bg-blue-50 transition-colors border border-blue-100"
-                >
-                  <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-foreground font-semibold">
-                    +254 780 000 002
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Support Team Section */}
-        <section className="py-16 md:py-24 bg-blue-50">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl h-96">
-                <Image
-                  src="/images/contact-support.jpg"
-                  alt="Professional customer support team providing 24/7 assistance"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                  quality={90}
-                />
-              </div>
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                  24/7 Expert Support at Your Service
-                </h2>
-                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  Our dedicated support team is here whenever you need us.
-                  Whether you have questions about features, need technical
-                  assistance, or just want to chat about your family's safety
-                  journey, we're ready to help.
-                </p>
-                <div className="space-y-4 mb-8">
-                  <div className="flex items-start gap-4">
-                    <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-bold text-foreground mb-1">
-                        Call Us Anytime
-                      </h3>
-                      <p className="text-muted-foreground">
-                        Available 24/7 for urgent support and inquiries
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-bold text-foreground mb-1">
-                        Email Support
-                      </h3>
-                      <p className="text-muted-foreground">
-                        Response within 24 hours to all inquiries
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-bold text-foreground mb-1">
-                        Fast Response Times
-                      </h3>
-                      <p className="text-muted-foreground">
-                        Average response time under 2 hours
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="tel:+254704000004"
-                  className="inline-block px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 font-bold transition-colors"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-600 px-6 py-4 font-black text-white transition hover:bg-emerald-500"
                 >
-                  Call Our Support Team Now
+                  <Phone className="h-5 w-5" />
+                  Call now
                 </a>
+                <Link
+                  href="/services"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-6 py-4 font-black text-white transition hover:bg-white/15"
+                >
+                  Browse services
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </div>
+
+              <div className="mt-8 grid gap-3 sm:grid-cols-3">
+                {[
+                  ["24/7", "Support mindset"],
+                  ["6", "Service families"],
+                  ["1 day", "Typical response target"],
+                ].map(([value, label]) => (
+                  <div
+                    key={label}
+                    className="rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur"
+                  >
+                    <p className="text-2xl font-black text-white">{value}</p>
+                    <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-indigo-100/70">
+                      {label}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
+
+            <ContactLeadForm />
           </div>
         </section>
 
-        {/* Contact Form Section */}
-        <section className="py-16 md:py-24 bg-white">
-          <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-foreground text-center mb-4">
-              Send Us a Message
-            </h2>
-            <p className="text-center text-muted-foreground mb-12">
-              Fill out the form below and our team will get back to you within
-              24 hours.
-            </p>
-
-            <form className="bg-white rounded-2xl border border-border p-8 space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-semibold text-foreground mb-2">
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="John Doe"
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-white text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-foreground mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="john@example.com"
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-white text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-2">
-                  Phone
-                </label>
-                <input
-                  type="tel"
-                  placeholder="+1 (234) 567-890"
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-white text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-2">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  placeholder="How can we help?"
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-white text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-2">
-                  Message
-                </label>
-                <textarea
-                  rows={6}
-                  placeholder="Tell us more about your inquiry..."
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-white text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 font-bold transition-colors shadow-md hover:shadow-lg"
+        <section className="px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-3">
+            {serviceHighlights.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/70"
               >
-                Send Message
-              </button>
-            </form>
-
-            <p className="text-center text-sm text-muted-foreground mt-6">
-              We respect your privacy. Your information will never be shared.
-            </p>
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#eef2ff] text-primary">
+                  <CheckCircle2 className="h-6 w-6" />
+                </div>
+                <h3 className="mt-4 text-xl font-black text-[#101042]">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  {item.copy}
+                </p>
+              </div>
+            ))}
           </div>
         </section>
 
-        {/* FAQ Quick Links */}
-        <section className="py-16 md:py-24 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-muted-foreground mb-8">
-              Check out our FAQ section for quick answers to common questions.
-            </p>
-            <a
-              href="/#faq"
-              className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 font-semibold transition-colors"
-            >
-              View FAQs
-            </a>
-          </div>
-        </section>
-
-        {/* Emergency Section */}
-        <section className="py-16 md:py-24 bg-red-50 border-t border-red-100">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-red-900 mb-4">
-              Emergency Situation?
-            </h2>
-            <p className="text-red-800 mb-6">
-              If your child is in immediate danger, please contact local
-              emergency services right away.
-            </p>
-            <a
-              href="tel:911"
-              className="inline-block px-8 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 font-bold transition-colors"
-            >
-              Call Emergency Line
-            </a>
+        <section className="px-4 pb-16 sm:px-6 lg:px-8">
+          <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+            <div className="rounded-3xl bg-[#101042] p-8 text-white shadow-2xl shadow-indigo-950/20">
+              <p className="text-sm font-black uppercase tracking-[0.28em] text-cyan-200">
+                Fast response
+              </p>
+              <h2 className="mt-3 text-3xl font-black">Need urgent help?</h2>
+              <p className="mt-4 max-w-2xl leading-7 text-indigo-100/80">
+                If you are dealing with a compromised phone, a child safety
+                issue, or a lost business device, call us directly so we can
+                point you to the right path immediately.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/70">
+              <div className="space-y-4 text-slate-700">
+                <div className="flex items-start gap-3">
+                  <Phone className="mt-1 h-5 w-5 text-primary" />
+                  <div>
+                    <p className="font-black text-[#101042]">Call support</p>
+                    <p>+254 704 000 004 or +254 704 000 002</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Mail className="mt-1 h-5 w-5 text-primary" />
+                  <div>
+                    <p className="font-black text-[#101042]">Email</p>
+                    <p>info@mulikampango.co.ke</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="mt-1 h-5 w-5 text-primary" />
+                  <div>
+                    <p className="font-black text-[#101042]">Service area</p>
+                    <p>Remote support and guided setup for lawful use</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Clock className="mt-1 h-5 w-5 text-primary" />
+                  <div>
+                    <p className="font-black text-[#101042]">Response target</p>
+                    <p>We aim to reply within one business day.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

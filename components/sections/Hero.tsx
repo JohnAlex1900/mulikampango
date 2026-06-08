@@ -45,30 +45,30 @@ export function Hero() {
             The child safety app for families who stay one step ahead.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-indigo-100/85">
-            Mulikamtoto gives parents a clear control panel for screen time,
-            app boundaries, consent-based location sharing, anti-theft setup,
-            and digital safety alerts. Built for lawful, authorized family
+            Mulikamtoto gives parents a clear control panel for screen time, app
+            boundaries, consent-based location sharing, anti-theft setup, and
+            digital safety alerts. Built for lawful, authorized family
             protection.
           </p>
 
-          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
-              href="https://net.mulikampango.co.ke"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#ff6767] px-6 py-4 text-base font-black text-white shadow-2xl shadow-[#ff6767]/25 transition hover:bg-[#ff7c7c]"
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-600 px-6 py-4 text-base font-black text-white shadow-2xl transition hover:bg-emerald-500"
             >
-              <Download className="h-5 w-5" />
-              Download App
+              Get Security Audit
             </a>
             <a
-              href="https://mimi.mulikampango.co.ke"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-6 py-4 text-base font-black text-white backdrop-blur transition hover:bg-white/15"
+              href="/services/parental-controls"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-6 py-4 text-base font-black text-white transition hover:bg-white/15"
             >
-              <LayoutDashboard className="h-5 w-5" />
-              Open Dashboard
+              Family Protection Setup
+            </a>
+            <a
+              href="/services/business-device-management"
+              className="hidden sm:inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/5 px-6 py-4 text-base font-black text-white transition hover:bg-white/12"
+            >
+              Business Device Management
             </a>
           </div>
 
@@ -78,9 +78,14 @@ export function Hero() {
               ["24/7", "Support mindset"],
               ["10+", "Years experience"],
             ].map(([value, label]) => (
-              <div key={label} className="rounded-lg border border-white/10 bg-white/10 p-4 backdrop-blur">
+              <div
+                key={label}
+                className="rounded-lg border border-white/10 bg-white/10 p-4 backdrop-blur"
+              >
                 <p className="text-2xl font-black text-white">{value}</p>
-                <p className="mt-1 text-xs font-semibold text-indigo-100/70">{label}</p>
+                <p className="mt-1 text-xs font-semibold text-indigo-100/70">
+                  {label}
+                </p>
               </div>
             ))}
           </div>
@@ -95,7 +100,9 @@ export function Hero() {
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-200">
                     Live family dashboard
                   </p>
-                  <p className="mt-1 text-xl font-black">Child Safety Overview</p>
+                  <p className="mt-1 text-xl font-black">
+                    Child Safety Overview
+                  </p>
                 </div>
                 <div className="flex h-11 w-11 items-center justify-center rounded-full bg-cyan-300/15">
                   <Smartphone className="h-5 w-5 text-cyan-200" />
@@ -104,16 +111,22 @@ export function Hero() {
 
               <div className="grid grid-cols-2 gap-3">
                 <div className="rounded-lg bg-[#1b1b6a] p-4">
-                  <p className="text-xs font-semibold text-indigo-100/60">Screen time</p>
+                  <p className="text-xs font-semibold text-indigo-100/60">
+                    Screen time
+                  </p>
                   <p className="mt-2 text-3xl font-black">2h 15m</p>
                   <div className="mt-4 h-2 rounded-full bg-white/10">
                     <div className="h-2 w-2/3 rounded-full bg-cyan-300" />
                   </div>
                 </div>
                 <div className="rounded-lg bg-[#1b1b6a] p-4">
-                  <p className="text-xs font-semibold text-indigo-100/60">Safe zone</p>
+                  <p className="text-xs font-semibold text-indigo-100/60">
+                    Safe zone
+                  </p>
                   <p className="mt-2 text-3xl font-black">Home</p>
-                  <p className="mt-4 text-xs font-bold text-emerald-300">Checked in</p>
+                  <p className="mt-4 text-xs font-bold text-emerald-300">
+                    Checked in
+                  </p>
                 </div>
               </div>
 
@@ -121,13 +134,18 @@ export function Hero() {
                 {insightCards.map((card) => {
                   const Icon = card.icon;
                   return (
-                    <div key={card.title} className="flex gap-3 rounded-lg bg-white p-4 text-[#101042]">
+                    <div
+                      key={card.title}
+                      className="flex gap-3 rounded-lg bg-white p-4 text-[#101042]"
+                    >
                       <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-[#eff6ff]">
                         <Icon className="h-5 w-5 text-[#2563eb]" />
                       </div>
                       <div>
                         <p className="font-black">{card.title}</p>
-                        <p className="mt-1 text-sm leading-5 text-slate-600">{card.copy}</p>
+                        <p className="mt-1 text-sm leading-5 text-slate-600">
+                          {card.copy}
+                        </p>
                       </div>
                     </div>
                   );
